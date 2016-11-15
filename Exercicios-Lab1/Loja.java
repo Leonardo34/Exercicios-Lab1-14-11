@@ -21,4 +21,17 @@ public class Loja
     
     public Pessoa[] getP() {return p;}
     
+    public void exibeArray() {
+        for(int i = 0; i < p.length; i++) {
+            if (p[i] instanceof Cliente) {
+                System.out.println("Nome: " + p[i].getNome());
+                System.out.println("Ano de Nascimento: " + p[i].getAnoNascimento());
+                System.out.println("Pontos: " + ((Cliente)p[i]).getPontos());
+            }
+            else if(p[i] instanceof Pessoa) {
+                System.out.println("Nome: " + p[i].getNome());
+                System.out.println("Ano de Nascimento: " + p[i].getAnoNascimento());
+            }
+        }
+    }
 }

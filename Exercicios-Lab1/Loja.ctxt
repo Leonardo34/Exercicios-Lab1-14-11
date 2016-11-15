@@ -3,4 +3,6 @@ comment0.params=tamanho
 comment0.target=Loja(int)
 comment1.params=
 comment1.target=Pessoa[]\ getP()
-numComments=2
+comment2.params=
+comment2.target=void\ exibeArray()
+numComments=3
