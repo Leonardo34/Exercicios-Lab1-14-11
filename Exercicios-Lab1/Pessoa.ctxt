@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=nome\ anoNascimento
+comment0.target=Pessoa(java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getNome()
+comment2.params=
+comment2.target=int\ getAnoNascimento()
+numComments=3
