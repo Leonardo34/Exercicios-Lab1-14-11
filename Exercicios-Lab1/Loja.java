@@ -34,4 +34,24 @@ public class Loja
             }
         }
     }
+    
+    public Pessoa[] ordenaPorAno() {
+        Pessoa[] aux = new Pessoa[p.length];
+        Pessoa pessoa;
+        for(int i = 0; i < p.length; i++) {
+            aux[i] = p[i];
+        }
+        for(int i = 0; i < aux.length - 1; i++) {
+            for(int j = i + 1; j < aux.length; j++) {
+                if(aux[i] != null && aux[j] != null) {
+                    if(aux[i].getAnoNascimento() > aux[j].getAnoNascimento()) {
+                        pessoa = aux[i];
+                        aux[i] = aux[j];
+                        aux[j] = pessoa;
+                    }
+                }
+            }
+        }
+        return aux;
+    }
 }
