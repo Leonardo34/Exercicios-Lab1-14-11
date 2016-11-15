@@ -54,4 +54,32 @@ public class Loja
         }
         return aux;
     }
+    
+    public double calculaMedia() {
+        int totalPontos = 0;
+        int totalClientes = 0;
+        for(int i = 0; i < p.length; i++) {
+            if(p[i] instanceof Cliente) {
+                totalPontos += ((Cliente)p[i]).getPontos();
+                totalClientes++;
+            }
+        }
+        if(totalClientes == 0) {
+            return 0;
+        }
+        return (double) totalPontos/totalClientes;
+    }
+    
+    public String getMaisVelho() {
+        Pessoa maisVelho = p[0];
+        
+        for(int i = 1; i < p.length; i++) {
+            if (p[i] != null) {
+                if(p[i].getAnoNascimento() < maisVelho.getAnoNascimento()) {
+                    maisVelho = p[i];
+                }
+            }
+        }
+        return maisVelho.getNome();
+    }
 }
