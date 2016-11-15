@@ -30,4 +30,18 @@ public class Lista12
         }
         return words;
     }
+    
+    public double[] ordenaDecrescente (double[] array) {
+        double aux;
+        for (int i = 0; i < array.length - 1; i+=2) {
+            for(int j = i + 2; j < array.length; j+=2) {
+                if (array[i] < array[j]) {
+                    aux = array[i];
+                    array[i] = array[j];
+                    array[j] = aux;
+                }
+            }
+        }
+        return array;
+    }
 }
