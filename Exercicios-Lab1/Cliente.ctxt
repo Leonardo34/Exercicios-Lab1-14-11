@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=nome\ anoNascimento\ pontos
+comment0.target=Cliente(java.lang.String,\ int,\ int)
+comment1.params=
+comment1.target=int\ getPontos()
+numComments=2
